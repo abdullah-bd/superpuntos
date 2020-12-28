@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "55316830693",
+    "firebase_url": "https://survey-app-64f6e.firebaseio.com",
+    "project_id": "survey-app-64f6e",
+    "storage_bucket": "survey-app-64f6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55316830693:android:7fddd5585465770fdbb70c",
+        "android_client_info": {
+          "package_name": "com.iotait.superpuntos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55316830693-em3ruo8vquc0eitqf7mbcmajc0867eup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDthzxk7tuSLuA2w6NGhcm-1s1MUTOEWrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55316830693-em3ruo8vquc0eitqf7mbcmajc0867eup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".admin.fragments.AdminHomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:background="@drawable/splash_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:src="@drawable/app_logo_name"
+            android:contentDescription="@string/content_description" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_separator_white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hola, Diego"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15th April,2020"
+                android:layout_below="@id/tvUserName"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_marginStart="@dimen/_20sdp"
+                />
+
+            <ImageView
+                android:id="@+id/ibBell"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:src="@drawable/ic_bell"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:contentDescription="@string/content_description" />
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="-24dp"
+        android:elevation="@dimen/_50sdp"
+        android:background="@drawable/bottom_sheet_bg">
+
+        <TextView
+            android:id="@+id/tvPick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_survey_list"
+            android:textColor="@color/darkGreen"
+            android:fontFamily="@font/spartan"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_24sdp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvPick"
+            android:layout_above="@+id/btnAddSurvey"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnInviteFriend"
+                android:layout_marginVertical="@dimen/_12sdp"
+                android:layout_marginStart="16dp"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:visibility="gone"
+                android:gravity="center"
+                android:id="@+id/tvNoSurvey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/spartan"
+                android:text="@string/addone"
+                android:textColor="@color/darkGreen"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <Button
+
+            android:id="@+id/btnAddSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:text="@string/add_new_survey"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/button_bg_8"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/spartan"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:textAlignment="textStart"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

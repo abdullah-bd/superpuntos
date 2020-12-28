@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp">
+
+    <TextView
+        android:id="@+id/tvSerial"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:text="01"
+       android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="@dimen/_16sdp"/>
+
+    <TextView
+        android:id="@+id/tvResearchName"
+        android:maxWidth="@dimen/_170sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="USER RESEARCH COURSE"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_below="@+id/tvResearchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15th April, 20202"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:layout_marginStart="@dimen/_80sdp"/>
+
+    <TextView
+        android:id="@+id/tvEarning"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:text="5$"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="@dimen/_32sdp"/>
+
+</RelativeLayout>

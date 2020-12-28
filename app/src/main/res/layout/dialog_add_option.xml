@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg_white">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_option"
+        android:textColor="@color/darkGreen"
+        android:fontFamily="@font/spartan"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/_20sdp"/>
+
+    <EditText
+        android:id="@+id/etOption"
+        android:layout_below="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg_green"
+        android:hint="@string/type_your_option_here"
+        android:imeOptions="actionDone"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:paddingBottom="@dimen/_4sdp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnDone"
+        android:layout_below="@+id/etOption"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:text="@string/done"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/spartan"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/button_bg_16"/>
+
+
+</RelativeLayout>

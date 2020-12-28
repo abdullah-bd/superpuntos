@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg_white">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out"
+        android:textColor="@color/darkGreen"
+        android:fontFamily="@font/spartan"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/_20sdp"/>
+
+    <TextView
+        android:id="@+id/etOption"
+        android:layout_below="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_you_want_to_log_out"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_4sdp"/>
+
+   <LinearLayout
+       android:layout_below="@+id/etOption"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="2"
+       android:layout_marginHorizontal="@dimen/_30sdp"
+       android:orientation="horizontal">
+
+       <Button
+           android:textAllCaps="false"
+           android:id="@+id/btnYes"
+           android:layout_width="0dp"
+           android:layout_height="@dimen/_24sdp"
+           android:layout_weight="1"
+           android:text="@string/yes"
+           android:fontFamily="@font/spartan"
+           android:textSize="16sp"
+           android:textColor="@android:color/white"
+           android:layout_marginTop="@dimen/_40sdp"
+           android:layout_marginBottom="@dimen/_20sdp"
+           android:background="@drawable/button_bg_16"/>
+
+       <Button
+           android:textAllCaps="false"
+           android:id="@+id/btnNo"
+           android:layout_width="0dp"
+           android:layout_height="@dimen/_24sdp"
+           android:layout_weight="1"
+           android:layout_marginStart="@dimen/_20sdp"
+           android:text="@string/no"
+           android:fontFamily="@font/spartan"
+           android:textSize="16sp"
+           android:textColor="@android:color/white"
+           android:layout_marginTop="@dimen/_40sdp"
+           android:layout_marginBottom="@dimen/_20sdp"
+           android:background="@drawable/button_bg_16"/>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.cashout.fragments.AddNewContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_layout"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp">
+
+            <LinearLayout
+                android:id="@+id/llNewContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_contact" />
+
+                <TextView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_new_ncontact"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkGreen"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:layout_toEndOf="@+id/llNewContact"
+                android:src="@drawable/previous_contact_faded" />
+
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24sdp">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/full_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/llPhone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:background="@drawable/et_bg"
+            android:orientation="horizontal">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:gravity="bottom"
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_bg"
+                app:ccp_customMasterCountries="NI"
+                app:ccp_defaultNameCode="NI"
+                android:paddingTop="15dp"
+                app:ccp_hideNameCode="true" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:paddingTop="@dimen/_16sdp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/et_bg">
+
+            <Spinner
+                android:id="@+id/spinnerOperator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/et_bg"
+                android:entries="@array/provider"
+                android:paddingTop="@dimen/_8sdp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:src="@drawable/ic_drop_down" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSaveAndSubmit"
+        android:layout_below="@+id/info_layout"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:gravity="center"
+        android:text="@string/aviso_recargas_solo_funcionan_con_numeros_prepago"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_10sdp" />
+
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnSaveAndSubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="@string/save_amp_submit"
+        android:fontFamily="@font/spartan"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_marginHorizontal="@dimen/_60sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/button_bg_16"/>
+</RelativeLayout>

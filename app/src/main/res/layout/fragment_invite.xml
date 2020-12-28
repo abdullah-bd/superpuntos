@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_bg"
+    tools:context=".activity.home.fragments.InviteFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/splash_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:src="@drawable/app_logo_name"
+                android:contentDescription="@string/content_description" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:padding="@dimen/_4sdp"
+                android:contentDescription="@string/content_description"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-24dp"
+        android:elevation="@dimen/_50sdp"
+        android:background="@drawable/bottom_sheet_bg">
+
+        <TextView
+            android:id="@+id/tvUserActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter an email or phone number to shared this app."
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:layout_marginVertical="@dimen/_24sdp"
+            android:layout_marginHorizontal="@dimen/_24sdp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHeading"
+            android:layout_below="@+id/tvUserActivities"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etEmailOrPhone"
+                    android:layout_toStartOf="@+id/ivGo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:hint="@string/enter_email_or_phone_number"
+                    android:layout_marginHorizontal="@dimen/_12sdp"/>
+
+                <ImageView
+                    android:id="@+id/ivGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_go"
+                    android:layout_marginHorizontal="@dimen/_12sdp"
+                    android:contentDescription="@string/content_description" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

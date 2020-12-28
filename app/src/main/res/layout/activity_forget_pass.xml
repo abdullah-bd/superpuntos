@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".activity.ForgetPassActivity">
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/signup_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/app_logo_name" />
+
+    <RelativeLayout
+        android:id="@+id/rlVerificationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_220sdp">
+
+        <TextView
+            android:id="@+id/tvSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_phone_number_to_help_ius_verify_it_s_you"
+            android:fontFamily="@font/spartan"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="@dimen/_24sdp" />
+
+        <LinearLayout
+            android:id="@+id/llPhone"
+            android:layout_below="@+id/tvSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            android:background="@drawable/et_bg">
+
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:background="@drawable/et_bg"
+                android:layout_height="match_parent"
+                app:ccp_textSize="@dimen/_14ssp"
+                app:ccp_hideNameCode="true" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/_14ssp"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_below="@+id/llPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_below="@+id/pb"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/verifiy"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bg_16"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llPassChangeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_280sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_your_password"
+            android:fontFamily="@font/spartan"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="@dimen/_24sdp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etNewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/new_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_24sdp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/change"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_bg_16"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

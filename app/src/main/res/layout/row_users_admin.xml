@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/_10sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivUser"
+        android:layout_width="@dimen/_44sdp"
+        android:layout_height="@dimen/_44sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/ivUser"
+        android:maxLines="1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/spartan"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUserName"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_toEndOf="@+id/ivUser"
+        android:text="$100 | 20th April, 2020"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/_2sdp"/>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnView"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:text="@string/view"
+        android:textColor="@android:color/black"
+        android:background="@drawable/button_bg_white_4"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:weightSum="4"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp">
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tvSerial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="01"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="30 Apr, 20202"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tvprocessing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Solicitada"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/tvEarning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="5$"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>
+</RelativeLayout>

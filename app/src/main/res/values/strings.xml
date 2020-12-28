@@ -1,0 +1,249 @@
+<resources>
+    <string name="app_name">Super Puntos</string>
+    <string name="inicia_sesion">Inicia Sesion</string>
+    <string name="forgot_password"> ¿Olvidastes tu contrasena?</string>
+    <string name="login">Inicia Sesion</string>
+    <string name="don_t_have_an_account_sign_up"> ¿No tienes una cuenta?<u><b>Registrate</b></u></string>
+    <string name="login_with_facebook">Inicia Sesion con Facebook</string>
+
+    <string name="content_description">Content_Description</string>
+    <string name="password">Contrasena</string>
+    <string name="or">o</string>
+    <string name="registrate_an_account">Registra una cuenta</string>
+    <string name="let_s_roll">¡Bienvenido!</string>
+    <string name="full_name">Nombre Completo</string>
+    <string name="occupation">Ocupacion</string>
+    <string name="age">Edad</string>
+    <string name="sign_up">Registrate</string>
+    <string name="already_have_an_account_sign_in">¿Ya tienes cuenta? Inicia Sesion</string>
+
+    <string name="enter_otp_code">Ingresa codigo OTP</string>
+    <string name="resend">Reenviar</string>
+
+    <string name="birthDay">Fecha de Nacimiento</string>
+    <string name="departamento">Departamento</string>
+    <string name="back_to_sign_up">Regresar a registracion</string>
+
+    <string-array name="provider">
+        <item>Nombre del Proveedor</item>
+        <item>Claro</item>
+        <item>Movistar</item>
+    </string-array>
+
+
+    <string-array name="occupasion">
+
+        <item> Abogado</item>
+        <item>  Actuario</item>
+        <item>  Administrador</item>
+        <item> Aduanero/Agente de Aduanas/Inspectores de Frontera</item>
+        <item> Aeromozo/Azafata</item>
+        <item> Agente/Intermediario/Corredor Inmobiliario</item>
+        <item>  Agente de Bolsa</item>
+        <item>  Agente de Inmigración/Migración</item>
+        <item>  Agente de Turismo/Viajes</item>
+        <item> Agente/Intermediario/Corredor de Seguros</item>
+        <item> Agricultor, Agrónomo, Agrologo, Arboricultor</item>
+        <item>  albañil, Obrero de Construcción</item>
+        <item>  Ama de Casa</item>
+        <item> Analista de Sistema y Computación</item>
+        <item>  Arquitecto</item>
+        <item>  Artesano</item>
+        <item>   Asistente Social</item>
+        <item>  Autor Literario, Escritor y Crmtico</item>
+        <item>  Avicultor</item>
+        <item> Bacteriólogo, Farmacólogo, Biólogo, Científico</item>
+        <item>  Basurero/Barrendero</item>
+        <item>   Cajero</item>
+        <item>   Camarero/Barman/Mesero/Chef</item>
+        <item>  Cambista, Compra/Venta de Moneda</item>
+        <item>   Campesino</item>
+        <item>    Carpintero</item>
+        <item>   Cerrajero</item>
+        <item> Cobrador</item>
+        <item>   Comerciante / Vendedor</item>
+        <item> Conductor, Chofer / Taxista</item>
+        <item>  Conserje/Portero/Guardián/Vigilante</item>
+        <item> Constructor</item>
+        <item>  Contador</item>
+        <item>   Contratista</item>
+        <item>  Cosmetólogo, Peluquero y Barbero</item>
+        <item>  Decorador, Dibujante, Publicista</item>
+        <item> Dentista / Odontólogo</item>
+        <item> Deportista Profesional, Atleta, Arbitro</item>
+        <item> Distribuidor</item>
+        <item>  Docente</item>
+        <item>  Economista</item>
+        <item>  Electricista</item>
+        <item>  Empleada(o) del hogar / Nana</item>
+        <item> Empresario Exportador/Empresario Importador</item>
+        <item> Enfermero</item>
+        <item> Estudiante</item>
+        <item> Fotógrafo/Operadores cámara, cine y tv, locutor</item>
+        <item> Ganadero</item>
+        <item> Ingeniero</item>
+        <item>  Jardinero</item>
+        <item> Joyero y/o Platero / Orfebre</item>
+        <item>  Jubilado / Pensionista</item>
+        <item> Laboratorista (Técnico)</item>
+        <item> Liquidador, Reclamaciones/Seguros</item>
+        <item> Maquinista / Operador de maquinaria</item>
+        <item> Martillero / Subastador</item>
+        <item> Mayorista, comercio al por mayor</item>
+        <item> Mecánico</item>
+        <item> Medico / Cirujano</item>
+        <item> Metalurgista</item>
+        <item> Miembro de las Fuerzas Armadas</item>
+        <item> Nutricionista</item>
+        <item> Obrero / Operador</item>
+        <item> Organizador de Eventos</item>
+        <item>  Panadero / Pastelero</item>
+        <item> Paramédico</item>
+        <item> Periodista</item>
+        <item> Pescador</item>
+        <item>  Piloto</item>
+        <item>  Pintor</item>
+        <item> Policía</item>
+        <item> Productor de Cine / Radio / Televisión / Teatro</item>
+        <item> Productor, Cultivos Extensivos</item>
+        <item> Programador</item>
+        <item>  Psicólogo / Terapeuta</item>
+        <item> Quiropráctico/Kinesiterapeuta (Kinesiólogos)</item>
+        <item>  Relacionista Publico e Industrial</item>
+        <item> Relojero</item>
+        <item>  Reparación de Automóviles, Pintor Retocador</item>
+        <item> Reparador de Aparatos Electrodomésticos</item>
+        <item> Repartidor</item>
+        <item> Sacerdote/Monja</item>
+        <item> Secretaria, Recepcionista, Telefonista</item>
+        <item> Seguridad/Guardaespaldas/Guardia de Seguridad</item>
+        <item> Servicio de Almacenamiento/Almacenero</item>
+        <item>  Servicio de Alquiler de Vehículos</item>
+        <item> Servicios de Alquiler de Videos, Equipos de Sonido</item>
+        <item> Sociólogo</item>
+        <item>Técnico</item>
+        <item>Tramitador</item>
+        <item> Transporte de Carga y/o Mudanza</item>
+        <item> Transportista</item>
+        <item>  Vendedor Ambulante</item>
+        <item> Veterinario, Zoólogo, Zootécnico</item>
+        <item>  Visitador Medico</item>
+        <item> Zapatero</item>
+        <item> Otros</item>
+
+    </string-array>
+    <string-array name="city">
+        <item>Boaco</item>
+        <item>Carazo</item>
+        <item>Chinandega</item>
+        <item>Chontales</item>
+        <item>Costa Caribe Norte</item>
+        <item>Costa Caribe Sur</item>
+        <item>Estelí</item>
+        <item>Granada</item>
+        <item>Jinotega</item>
+        <item>León</item>
+        <item>Madriz</item>
+        <item>Managua</item>
+        <item>Masaya</item>
+        <item>Matagalpa</item>
+        <item>Nueva Segovia</item>
+        <item>Río San Juan</item>
+        <item>Rivas</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro_desc_one">Responde encuestas rapidas desde tu celular y gana puntos</string>
+    <string name="intro_desc_two">Responde encuestas rapidas desde tu celular, gana puntos, y canjea tus puntos por premios</string>
+    <string name="invite_a_friend">¡Invita a un amigo!</string>
+    <string name="total_earned">Puntos Disponibles</string>
+    <string name="earning">Gana</string>
+    <string name="survey_name">Nombre de Encuesta</string>
+    <string name="pick_best_nsurvey_for_you">Elige la mejor\nencuesta para ti</string>
+    <string name="claim">Solicitar</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="user_activities">Actividades del Usuario</string>
+    <string name="unclaimed">(Disponibles)</string>
+    <string name="no">No</string>
+    <string name="enter_email_or_phone_number">Ingresa tu correo o numero</string>
+    <string name="survey">Encuesta</string>
+    <string name="next">Siguiente</string>
+    <string name="save_amp_submit"><![CDATA[Guardar y enviar]]></string>
+    <string name="demo">Lorem ipsum dolor sit amet, id has semper eirmod volutpat, tale audire senserit ut pri.</string>
+    <string name="complete">Completa</string>
+    <string name="delete_account">Borrar Cuenta</string>
+    <string name="save">Guardar</string>
+    <string name="reward">Premio</string>
+    <string name="add_new_ncontact">Añadir nuevo contacto</string>
+    <string name="previous_ncontact">Contacto anterior</string>
+    <string name="submit">Enviar</string>
+    <string name="your_survey_list">Encuestas Activas</string>
+    <string name="add_new_survey">Agregar Nueva Encuesta</string>
+    <string name="personal">Personal</string>
+    <string name="user_list">USER LIST</string>
+    <string name="release">Liberar</string>
+    <string name="view">Ver</string>
+    <string name="add_survey">Agregar Encuesta</string>
+    <string name="add_survey_question_here">Agregar Pregunta Aqui</string>
+    <string name="select_type">Selecciona Tipo</string>
+    <string name="multiple_questions"><u>Opcion Multiple</u></string>
+    <string name="true_false"><u>Verdadero / Falso</u></string>
+    <string name="add_option">Agregar Opcion</string>
+    <string name="add_more_option">Agregar Opciones</string>
+    <string name="add_more">Agregar mas preguntas</string>
+    <string name="account_details">Detalles de Cuenta</string>
+    <string name="last_withdraw">Ultima Solicitud</string>
+    <string name="facebook_app_id">659785461543365</string>
+    <string name="fb_login_protocol_scheme">fb659785461543365</string>
+    <string name="add_category_name">Agregar Categoria</string>
+    <string name="add_survey_name">Agregar Nombre de Encuesta</string>
+    <string name="save_amp_preview"><![CDATA[Guardar & Ver]]></string>
+    <string name="preview">Ver</string>
+    <string name="back">Atras</string>
+    <string name="add_your_option">Agregar tu opcion</string>
+    <string name="add">Agregar</string>
+    <string name="type_your_option_here">Ingresa Aqui</string>
+    <string name="done">Continuar</string>
+    <string name="total_claimed">Total Solicitado</string>
+    <string name="provider_name">Nombre del Proveedor</string>
+    <string name="congratulation_you_have_successfully_completed_the_survey">¡Felicidades! Ya has terminado esta encuesta.</string>
+    <string name="enter_your_email">Ingresa tu correo</string>
+    <string name="user_ncontact">Usuario\nContacto</string>
+    <string name="release_fund">Liberar Fondos</string>
+    <string name="add_survey_points">Agregar Puntos</string>
+    <string name="add_survey_deadline">Agregar Fecha Limite</string>
+    <string name="reward_claimed">Recargas Solicitadas</string>
+    <string name="log_out">Cerrar Sesion</string>
+    <string name="are_you_sure_you_want_to_log_out">¿Estas seguro que quieres cerrar session?</string>
+    <string name="yes">Si</string>
+    <string name="no_user_claimed_reward">Usuario no ha solicitado puntos</string>
+    <string name="no_activities_found">No se encontraron actividades</string>
+    <string name="new_password">Nueva Contrasena</string>
+    <string name="confirm_password">Confirmar Contrasena</string>
+    <string name="change_your_password">Cambia tu Contrasena</string>
+    <string name="add_max_participant">Agregar Max. Participantes</string>
+    <string name="history">Historial</string>
+    <string name="no_reward_claimed_yet">Aun no has solicitado recargas</string>
+    <string name="enter_your_phone_number_to_help_ius_verify_it_s_you">Ingresa tu numero telefonico para que podamos verificar tu identidad</string>
+    <string name="verifiy">Verificar</string>
+    <string name="change">Cambiar</string>
+    <string name="claiming_date">Fecha</string>
+    <string name="amount">Puntos</string>
+    <string name="ok">OK</string>
+    <string name="terms">Aceptar <u>Terminos y Condiciones</u>.</string>
+    <string name="terms_and_conditions"><u>Terminos y Condiciones</u></string>
+    <string name="rewardInfo">Estos son los puntos que has acumulado a traves de tus participaciones en encuestas. Una vez tengas almenos C$170 puntos, puedes solicitar una recarga movil. Por el momento, solo se puede solicitar C$170 puntos a la vez.</string>
+    <string name="no_active_survey">¡Lo siento! No hay encuestas \n en este momento. Regresa luego. </string>
+    <string name="addone">Sorry there are no active surveys right now. Add One Now!</string>
+    <string name="accept_privacy_policy">Aceptar <u>Politica de Privacidad</u></string>
+    <string name="privacy_policy"><u>Politica de Privacidad</u></string>
+    <string name="historial_de_encuestas">Historial de Encuestas</string>
+    <string name="aviso_recargas_solo_funcionan_con_numeros_prepago"> <u>Aviso:</u> Recargas solo funcionan con \n numeros prepago.</string>
+</resources>

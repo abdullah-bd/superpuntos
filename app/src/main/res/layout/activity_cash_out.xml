@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/splash_bg"
+    tools:context=".activity.cashout.CashOutActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:src="@drawable/app_logo_name"
+        android:contentDescription="@string/content_description" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/view_separator_white"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:paddingStart="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="@string/total_earned"
+            android:fontFamily="@font/spartan"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/imageinfo"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_info"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:src="@drawable/ic_coin"
+        android:contentDescription="@string/content_description" />
+
+    <TextView
+        android:id="@+id/tvCoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:text="$50.00"
+        android:textAlignment="center" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:tabGravity="fill"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:tabMode="fixed"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_sheet_bg"/>
+
+
+</LinearLayout>

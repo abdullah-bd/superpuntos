@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_rewards"
+        android:icon="@drawable/ic_reward_navi"
+        android:title="Puntos" />
+
+    <item
+        android:id="@+id/navigation_survey"
+        android:icon="@drawable/ic_survey_navi"
+        android:title="Encuestas" />
+
+    <item
+        android:id="@+id/navigation_parson"
+        android:icon="@drawable/ic_user_navi"
+        android:title="@string/personal"/>
+
+
+</menu>

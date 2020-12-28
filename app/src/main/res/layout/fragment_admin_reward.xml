@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".admin.fragments.AdminRewardFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:background="@drawable/splash_bg">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:src="@drawable/app_logo_name"
+            android:contentDescription="@string/content_description" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_separator_white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reward_claimed"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"
+            android:fontFamily="@font/spartan"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/_8sdp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="-24dp"
+        android:elevation="@dimen/_50sdp"
+        android:background="@drawable/bottom_sheet_bg">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvRewardClaimed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:overScrollMode="never"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tvNoClaim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_user_claimed_reward"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/darkGreen"
+            android:fontFamily="@font/spartan"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/_100sdp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

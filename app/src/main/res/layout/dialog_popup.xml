@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_bg_white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/darkGreen"
+        android:fontFamily="@font/spartan"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/_20sdp"/>
+<ScrollView
+    android:id="@+id/scrollv"
+    android:layout_marginHorizontal="@dimen/_24sdp"
+    android:layout_below="@+id/tvTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Body Text"
+            android:textAlignment="center"
+            android:textSize="@dimen/_15sdp"
+            />
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/btnOk"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:text="@string/ok"
+            android:fontFamily="@font/spartan"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/button_bg_16"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+</RelativeLayout>

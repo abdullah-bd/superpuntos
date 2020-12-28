@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    tools:context=".admin.activity.AdminPreviewActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/splash_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_toEndOf="@+id/ivBack"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:text="@string/preview"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/spartan"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/content_description" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:padding="@dimen/_4sdp"
+                android:contentDescription="@string/content_description"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:text="@string/save"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/spartan"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:contentDescription="@string/content_description"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnNext"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/bottom_sheet_bg"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQuestion"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb1"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="visible" />
+
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption1"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb2"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption2"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb3"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb3"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption3"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb4"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb4"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption4"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb5"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb5"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption5"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb6"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb6"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption6"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb7"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb7"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption7"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb8"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb8"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption8"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb9"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb9"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption9"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb10"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb10"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption10"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb11"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb11"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption11"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb12"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb12"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption12"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb13"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb13"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption13"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb14"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb14"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption14"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb15"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb15"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <ImageButton
+                        android:id="@+id/ibOption15"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/content_description"
+                        android:src="@drawable/ic_edit_1"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:text="1/20"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/ibQuestion"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/tvCounter"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/content_description"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_edit_1" />
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ibQuestion"
+                android:layout_marginHorizontal="@dimen/_24sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="@string/demo"
+                android:textAlignment="center"
+                android:textColor="@color/darkGreen"
+                android:textSize="22sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_above="@+id/tvBack"
+        android:layout_marginHorizontal="@dimen/_50sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:background="@drawable/button_bg_16"
+        android:fontFamily="@font/spartan"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/spartan"
+        android:text="@string/back"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/darkGreen"
+        android:textSize="16sp" />
+</RelativeLayout>

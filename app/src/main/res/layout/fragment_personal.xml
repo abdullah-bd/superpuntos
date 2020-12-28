@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg"
+    tools:context=".activity.home.fragments.PersonalFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/splash_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:src="@drawable/app_logo_name"
+                android:contentDescription="@string/content_description" />
+
+            <ImageView
+                android:id="@+id/ivLogOut"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:src="@drawable/ic_exit"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:padding="@dimen/_6sdp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/content_description" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_separator_white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_16sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUser"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="26dp"
+                android:contentDescription="@string/content_description"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toStartOf="@+id/coin_iv"
+                android:layout_toEndOf="@+id/ivUser"
+                android:maxLines="1"
+                android:text="User name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvUserName"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_toEndOf="@+id/ivUser"
+                android:text="+8801757731252"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_8ssp" />
+
+            <ImageView
+                android:id="@+id/coin_iv"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_coin" />
+
+            <TextView
+                android:id="@+id/coinTv"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/coin_iv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-10dp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:text="C$50"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_8ssp" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivHelp"-->
+<!--                android:layout_width="@dimen/_20sdp"-->
+<!--                android:layout_height="@dimen/_20sdp"-->
+<!--                android:layout_below="@+id/coin_iv"-->
+<!--                android:layout_alignStart="@+id/coin_iv"-->
+<!--                android:layout_alignEnd="@+id/coin_iv"-->
+<!--                android:layout_alignBottom="@+id/btnEdit"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:src="@drawable/ic_help" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/ivUser"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@drawable/button_bg_white"
+                    android:fontFamily="@font/spartan"
+                    android:text="Editar Perfil"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/darkGreen"
+                    android:textSize="@dimen/_10ssp" />
+            <Button
+                android:id="@+id/ivHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_18sdp"
+                android:text="Ayuda"
+                android:textAllCaps="false"
+                android:textColor="@color/darkGreen"
+                android:textSize="@dimen/_10ssp"
+                android:background="@drawable/button_bg_white"
+                android:fontFamily="@font/spartan"
+                />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_marginTop="-24dp"
+        android:elevation="@dimen/_50sdp"
+        android:background="@drawable/bottom_sheet_bg">
+
+        <TextView
+            android:id="@+id/tvUserActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/historial_de_encuestas"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHeading"
+            android:layout_below="@+id/tvUserActivities"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_24sdp"
+            app:cardBackgroundColor="@color/fadedWhite"
+            app:cardElevation="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_4sdp">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/no"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:layout_marginStart="@dimen/_16sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_80sdp"
+                    android:gravity="center_vertical"
+                    android:text="Encuesta"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:gravity="center_vertical"
+                    android:text="Puntos "
+                    android:textColor="@android:color/black" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUserActivities"
+            android:layout_below="@+id/cvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/row_user_activities"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/tvNoActivities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_activities_found"
+            android:layout_centerInParent="true"
+            android:textColor="@color/darkGreen"
+            android:fontFamily="@font/spartan"
+            android:textSize="@dimen/_14ssp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

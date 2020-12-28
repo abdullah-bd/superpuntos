@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.intro.fragments.IntroTwoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/intro_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/reward_img" />
+
+        <TextView
+            android:id="@+id/tvtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro_desc_two"
+            android:layout_below="@id/intro_img_2"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="#141414"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"/>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lll"
+            android:layout_alignParentBottom="true"
+            android:elevation="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_marginHorizontal="@dimen/_70sdp"
+            android:paddingHorizontal="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:visibility="gone"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:progress="0"
+                android:progressTint="@color/darkGreen"
+                android:progressBackgroundTint="@android:color/white" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:progress="100"
+                android:progressTint="@color/darkGreen"
+                android:progressBackgroundTint="@android:color/white" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lll"
+            android:layout_below="@+id/tvtv"
+            >
+
+            <Button
+                android:id="@+id/btDone"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/button_bg_16"
+                android:text="@string/done"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

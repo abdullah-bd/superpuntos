@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".activity.SurveyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/splash_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_toEndOf="@+id/ivBack"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:text="@string/survey"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/spartan"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:contentDescription="@string/content_description" />
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/ic_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:padding="@dimen/_4sdp"
+                android:contentDescription="@string/content_description"
+                android:foreground="?android:attr/selectableItemBackground"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginTop="-24dp"
+        android:elevation="@dimen/_50sdp"
+        android:background="@drawable/bottom_sheet_bg">
+
+        <RelativeLayout
+            android:id="@+id/rlQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/survey_bg"
+            android:visibility="visible">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_toStartOf="@+id/tvPercentage"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_6sdp"
+                android:progress="0"
+                android:progressTint="@color/darkGreen"
+                android:progressBackgroundTint="@android:color/white"
+                android:background="@drawable/progressbar_bg_faded_white"
+                android:layout_marginVertical="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_36sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:paddingHorizontal="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/tvPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0%"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_marginVertical="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_36sdp"/>
+
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_below="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/demo"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:layout_marginVertical="@dimen/_16sdp"
+                android:layout_marginHorizontal="@dimen/_24sdp"/>
+
+            <ScrollView
+                android:id="@+id/llmulti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnNext"
+                android:layout_below="@+id/tvQuestion"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/cbOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option one"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option two"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option three"
+                        android:textSize="22sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+                    <CheckBox
+                        android:id="@+id/cb15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/_4sdp"
+                        android:buttonTint="@color/darkGreen"
+                        android:text="Option four"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnNext"
+                android:layout_below="@+id/tvQuestion"
+                android:visibility="visible">
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_50sdp"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/radio_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="One"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Two"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+                <RadioButton
+                    android:id="@+id/radio15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:buttonTint="@color/darkGreen"
+                    android:text="Three"
+                    android:textSize="22sp" />
+
+
+            </RadioGroup>
+
+            </ScrollView>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btnNext"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/next"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_bg_16"
+                android:layout_marginBottom="@dimen/_50sdp"/>
+
+
+        </RelativeLayout>
+
+       <androidx.core.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <LinearLayout
+               android:id="@+id/llComplete"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:visibility="gone">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/complete"/>
+
+               <ImageView
+                   android:layout_width="@dimen/_50sdp"
+                   android:layout_height="@dimen/_50sdp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/sur_comp"
+                   android:layout_marginTop="@dimen/_16sdp"/>
+
+               <TextView
+                   android:id="@+id/earnedpoint"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="Earned points"
+                   android:textColor="@android:color/black"
+                   android:textSize="20sp"/>
+
+               <TextView
+                   android:id="@+id/tvCompleted"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="@string/congratulation_you_have_successfully_completed_the_survey"
+                   android:textColor="@android:color/black"
+                   android:textAlignment="center"
+                   android:layout_marginHorizontal="@dimen/_20sdp"
+                   android:layout_marginVertical="@dimen/_20sdp"
+                   android:textSize="20sp"/>
+
+               <Button
+                   android:textAllCaps="false"
+                   android:id="@+id/btnComplete"
+                   android:layout_width="@dimen/_150sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_gravity="center"
+                   android:text="@string/complete"
+                   android:textSize="18sp"
+                   android:textStyle="bold"
+                   android:textColor="@android:color/white"
+                   android:background="@drawable/button_bg_16"
+                   android:layout_marginBottom="@dimen/_60sdp"/>
+
+
+           </LinearLayout>
+
+       </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
